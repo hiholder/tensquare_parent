@@ -64,6 +64,9 @@ public class ArticleController {
     @RequestMapping(method = RequestMethod.GET)
     public Result findAll() {
         List<Article> list = articleService.findAll();
+        for (Article article:list){
+            System.out.println(article);
+        }
         return new Result(true, StatusCode.OK, "查询成功", list);
     }
 

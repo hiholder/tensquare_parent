@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="commentdb@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.20">
+    <root id="1">
+      <ServerVersion>3.2.10</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="commentdb">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="local"/>
+    <table id="4" parent="2" name="comment"/>
+    <column id="5" parent="4" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="6" parent="4" name="_class">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="7" parent="4" name="content">
+      <Position>2</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="8" parent="4" name="publishdate">
+      <Position>3</Position>
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="9" parent="4" name="thumbup">
+      <Position>4</Position>
+      <DataType>Double(0)|8s</DataType>
+    </column>
+    <column id="10" parent="4" name="userid">
+      <Position>5</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+  </database-model>
+</dataSource>
